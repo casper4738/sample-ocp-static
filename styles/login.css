@@ -1,0 +1,234 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#content {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+	padding: 15px;
+	line-height: 1.5em;
+	color: white;
+	font-family: sans-serif;
+	font-size: 16px;
+	background-color: transparent;
+	width: 98%;
+	background-color: transparent;
+}
+
+#content h1 {
+	line-height: 1.3em;
+}
+
+#content a {
+	color: red;
+}
+
+#content a:hover {
+	color: pink;
+}
+
+.posisi_login {
+	margin-top: 6% !important;
+	left: 65% !important;
+	width: 25% !important;
+	vertical-align: middle;
+}
+
+.login_form {
+	width: 100% !important;
+	color: white !important;
+	font-weight: bold !important;
+	padding-top: 18% !important;
+}
+
+.login_form div {
+	margin-bottom: 5% !important;
+}
+
+.fieldLogin {
+	padding-left: 20% !important;
+}
+
+.layer2 {
+	position: absolute;
+	z-index: 2;
+}
+
+.layer3 {
+	position: absolute;
+	z-index: 3;
+}
+
+.center {
+	text-align: center !important;
+}
+
+.container .four.columns {
+	width: 16.7%;
+}
+
+.error {
+	color: red;
+}
+
+.prepage {
+	background-color: rgb(1, 1, 1);
+    background-color: rgba(1, 1, 1, 0.8);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10000;
+}
+
+.prepage .load {
+	width: 210px;
+	background: #d3d3d3;
+	position: fixed;
+	-webkit-animation: minimise 500ms linear;
+	-moz-animation: minimise 500ms linear;
+	top: 38%;
+	left: 50%;
+	margin-top: -80px;
+	margin-left: -105px;
+	padding: 10px;
+	border-radius: 7px;
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.9);
+	background-color: #fff;
+	background: -moz-linear-gradient(#fff, #ccc);
+	background: -webkit-linear-gradient(#fff, #ccc);
+	background: -o-linear-gradient(#fff, #ccc);
+	text-shadow: 0 1px 0 #fff;
+	text-align: center;
+	pointer-events: none;
+}
+
+.prepage .iconWait{
+	width: 150px;
+}
+
+input[type=submit] {
+	font-size: 14px;
+}
+
+input[type="text"], input[type="password"] {
+	border: 1px solid #ccc;
+	padding: 2.5% 2.5%;
+	outline: none;
+	color: #777;
+	margin: 0;
+	max-width: 100%;
+	display: block;
+	background: #fff;
+	width: 70% !important;
+	margin-bottom: 0 !important;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.loginMessage {
+	padding-left: 6%;
+	padding-right: 6%;
+	height: 40px;
+}
+
+@media only screen and (min-width: 1153px) and (max-width: 1280px) {
+	#content {
+		font-size: 13px;
+	}
+	input[type=submit] {
+		font-size: 13px;
+	}
+	.login_form {
+		padding-top: 13% !important;
+	}
+	
+	
+	.loginMessage {
+		height: 35px;
+	}
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1152px) {
+	#content {
+		font-size: 12px;
+	}
+	input[type=submit] {
+		font-size: 12px;
+	}
+	.login_form {
+		padding-top: 12% !important;
+	}
+	
+	
+	.loginMessage {
+		height: 35px;
+	}
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1024px) {
+	#content {
+		font-size: 11px;
+	}
+	input[type=submit] {
+		font-size: 11px;
+	}
+	.login_form {
+		padding-top: 10% !important;
+	}
+	
+	.loginMessage {
+		height: 25px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#content {
+		font-size: 10px;
+		height: 570px;
+		width: 770px;
+		background-image: url("../images/ancient/archipelago_login_background_800.jpg");
+	}
+	input[type=submit] {
+		font-size: 10px;
+	}
+	.posisi_login {
+		margin-top: 36px !important;
+		left: 520px !important;
+		width: 200px !important;
+		vertical-align: middle;
+	}
+	.login_form {
+		width: 100% !important;
+		color: white !important;
+		font-weight: bold !important;
+		padding-top: 9% !important;
+	}
+	.login_form div {
+		margin-bottom: 5% !important;
+	}
+	.fieldLogin {
+		padding-left: 20% !important;
+	}
+	input[type="text"], input[type="password"] {
+		width: 70% !important;
+		margin-bottom: 0 !important;
+	}
+	#background-image {
+		display: none;
+	}
+	#background-image2 {
+		display: block;
+	}
+	.loginMessage {
+		height: 25px;
+	}
+}

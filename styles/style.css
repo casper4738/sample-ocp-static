@@ -1,0 +1,408 @@
+/* input, select, textarea {
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+} */
+input[type="text"], input[type="password"] {
+	border: 1px solid #ccc;
+	padding: 4px 4px;
+	outline: none;
+	color: #777;
+	margin: 0;
+	background: #fff;
+	margin-bottom: 0 !important;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+textarea {
+	border: 1px solid #ccc;
+	padding: 4px 4px;
+	outline: none;
+	color: #777;
+	margin: 0;
+	background: #fff;
+	margin-bottom: 0 !important;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+select {
+	border: 1px solid #ccc;
+	padding: 3px 3px;
+	outline: none;
+	color: #777;
+	margin: 0;
+	background: #fff;
+	margin-bottom: 0 !important;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.background_image {
+	display: block !important;
+}
+
+.upper {
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 14pt;
+	color: rgb(88, 43, 40);
+	color: rgba(88, 43, 40, 1);
+}
+
+h3 {
+	font-size: 12pt;
+	color: rgb(88, 43, 40);
+	color: rgba(88, 43, 40, 1);
+	width: 68%;
+	padding-bottom: 5px;
+	border-bottom: 2px dashed rgb(88, 43, 40);
+}
+
+/* Table */
+table {
+	max-width: 100%;
+	background-color: transparent;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table.entry {
+	font-size: 14px;
+}
+
+table.form {
+	width: 100%;
+	margin-bottom: 20px;
+	/* box-shadow: 2px 2px 2px #888888; */
+}
+
+table.form tr.odd {
+	background: #edd2b8 !important;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+table.form tr.even {
+	background: #f4e6d7 !important;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+table.form tr:nth-child(odd) {
+	background: #edd2b8;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+table.form tr:nth-child(even) {
+	background: #f4e6d7;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+table.form tr td:last-child {
+	width: 84%;
+}
+
+table.form2 tr td:last-child {
+	width: 20% !important;
+}
+
+table.form tr td:first-child {
+	width: 15%;
+	padding-left: 10px;
+}
+
+table.form th, table.form td {
+	padding: 4px;
+	line-height: 20px;
+	text-align: left;
+	vertical-align: top;
+}
+
+table.form th {
+	font-weight: bold;
+}
+
+table.form thead th {
+	vertical-align: bottom;
+}
+
+table.form th.header {
+	background: #804000 !important;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+}
+
+table th.subheader {
+	background: #804000 !important;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	line-height: 10px !important;
+}
+
+table.form td.label, table.form th.label {
+	/* font-weight: bold;  */
+	color: #3f1f1d;
+	vertical-align: top !important;
+	white-space: nowrap;
+}
+
+table.form td.header {
+	background: #804000 !important;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+}
+
+table.form tr td ol.numTd {
+    padding-inline-start: inherit;
+    margin-block-start: inherit;
+    margin-block-end: inherit;
+    list-style-position: inside;
+    list-style-type: decimal;
+    text-indent: -18px;
+	padding-left:18px;
+}
+
+table.form tr td ol.alpTd2 {
+    padding-inline-start: inherit;
+    margin-block-start: inherit;
+    margin-block-end: inherit;
+    padding-left: 30px;
+	list-style-position: inside;
+	text-indent: -15px;
+	list-style-type: lower-alpha;
+}
+
+table.form tr td ol.numTd li {
+  position: relative;
+}
+
+table.form tr td ol.numTd li a{
+  position: absolute;
+  left: 30px;
+}
+
+.has-error {
+	border-color: red;
+}
+
+.label {
+	color: #3f1f1d;
+	white-space: nowrap;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+table.options {
+	margin-bottom: 10px;
+}
+
+table.options th, table.options td {
+	padding: 8px;
+	line-height: 20px;
+	text-align: left;
+	vertical-align: top;
+}
+
+table.options th {
+	font-weight: bold;
+}
+
+table.options thead th {
+	vertical-align: bottom;
+}
+
+.table caption+thead tr:first-child th, .table caption+thead tr:first-child td,
+	.table colgroup+thead tr:first-child th, .table colgroup+thead tr:first-child td,
+	.table thead:first-child tr:first-child th, .table thead:first-child tr:first-child td
+	{
+	border-top: 0;
+}
+
+.table tbody+tbody {
+	border-top: 2px solid #dddddd;
+}
+
+.table-condensed th, .table-condensed td {
+	padding: 4px 5px;
+}
+
+.table-striped tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th
+	{
+	background-color: #E2E4FF;
+}
+
+/* Align */
+.center {
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.top {
+	vertical-align: top;
+}
+
+/* Form */
+input.datepicker, input.custompicker {
+	width: 70px;
+	text-align: center;
+}
+
+.error {
+	color: red;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.errorMessage {
+	display: none;
+}
+
+.errorLogin {
+	color: red;
+	display: inline-block;
+}
+
+.errorLabel { /* color: red; */
+	
+}
+
+.errorField { /* border-color: red !important; */
+	
+}
+
+.errorSelect { /* border-color: red !important; */
+	
+}
+
+.errorRadio { /* border-color: red !important; */
+	
+}
+
+.berita {
+	font-family: "Courier New" !important;
+	width: 500px;
+}
+
+.readonly {
+	border: none;
+	background: none;
+}
+
+.doubleDot {
+	width: 10px;
+}
+
+.language {
+	width: 40%;
+}
+
+/* Util and Overide*/
+.toggler {
+	padding: 5px;
+}
+
+.togglerHead {
+	text-align: center;
+	margin: auto;
+}
+
+.toggler p {
+	padding: 0px 15px;
+}
+
+.hide {
+	display: none;
+}
+
+a img {
+	border: none;
+}
+
+.ui-state-success {
+	border: 1px solid rgb(196, 122, 35);
+	border: 1px solid rgba(196, 122, 35, 1);
+	color: rgb(104, 32, 31);
+}
+
+.floatLeft {
+	float: left;
+	margin-left: 10px;
+}
+
+.floatright {
+	float: right;
+	margin-right: 10px;
+}
+
+.datepick {
+	width: 100px;
+}
+
+.ui-datepicker-trigger {
+	margin-left: 5px;
+}
+
+.fg-toolbar {
+	min-height: 25px;
+}
+
+.custom-combobox {
+	position: relative;
+	display: inline-block;
+}
+
+.custom-combobox-toggle {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin-left: -1px;
+	padding: 0;
+}
+
+.custom-combobox-input {
+	margin: 0;
+	padding: 5px 10px;
+}
+
+#span1 {
+	width: 335px;
+	float: left;
+}
+
+#span2 {
+	width: 500px;
+	float: right;
+}
+
+#span3 {
+	width: 80px;
+	float: left;
+}
+
+#span4 {
+	width: 30%;
+	float: left;
+}
+
+#filterStatus {
+	width: 130px;
+}
+
+.hideClass {
+	display: none;
+}
