@@ -105,15 +105,17 @@
    </body>
 	
 	<script>
-		window.message = function(e) {
-			if(e.data == 'hello') {
-			    document.getElementById('loadingmsg').style.display = 'block';
-			    document.getElementById('loadingover').style.display = 'block';
-			}
-			if(e.data == 'done') {
-			    document.getElementById('loadingmsg').style.display = 'none';
-			    document.getElementById('loadingover').style.display = 'none';
-			}
-	   	 };
+		window.addEventListener('message', function (e) {
+		    const data = e.data;
+		    const decodedMsg = JSON.parse(data);
+		    if(decodedMsg.trigger == 'SHOW_LOADER') {
+			document.getElementById('loadingmsg').style.display = 'block';
+			document.getElementById('loadingover').style.display = 'block';
+		    }
+		    if(decodedMsg.trigger == 'HIDE_LOADER') {
+			document.getElementById('loadingmsg').style.display = 'none';
+			document.getElementById('loadingover').style.display = 'none';
+		    }
+		})
 	</script>
 </html>
